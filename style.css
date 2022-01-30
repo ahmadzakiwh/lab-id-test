@@ -2,7 +2,7 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 .navbar {
-    /* background-color: #424d83; */
+    background-color: #424d83;
     z-index: 1;
 }
 .navbar-dark .navbar-brand{
@@ -39,15 +39,18 @@ body {
     margin-left: 5px;
 }
 .carousel-image {
-    height: 1200px;
-    margin-top: -400px;
+    height: 110vh;
+    margin-top: -20vh;
     background-image: url("./assets/Hero_BG.png");
-    background-position: center;
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
     color: white;
+}
+.carousel-text {
+    width: 800px;
 }
 .carousel-text h3{
     font-weight: 700;
@@ -70,8 +73,9 @@ body {
     padding: 8px 10px;
     font-size: 12px;
 }
-.illustration {
-    width: 100%;
+.carousel-bg img {
+    width: 550px;
+    min-width: 300px;
 }
 .title-services h5{
     font-weight: 700;
@@ -124,6 +128,26 @@ body {
     width: 520px;
     border-radius: 5px;
     padding: 35px;
+    position: relative;
+}
+.clouds {
+    position: absolute;
+    width: 35%;
+    right: 10px;
+    top: 25px;
+}
+.our-plans-2 {
+    background-color: #424d83;
+    width: 520px;
+    border-radius: 5px;
+    padding: 35px;
+    position: relative;
+}
+.logos {
+    position: absolute;
+    width: 35%;
+    right: 0px;
+    top: 0px;
 }
 .image-launch {
     background-color: #424d83;
@@ -140,7 +164,7 @@ body {
 .contents-launch-2 {
     font-size: 14px;
 }
-.learn-more-launch button {
+.learn-more-launch-1 button {
     color: #93a5ff;
     border: 0;
     border-radius: 3px;
@@ -148,11 +172,25 @@ body {
     padding: 10px;
     background-color: white;
 }
-.our-plans-2 {
+.learn-more-launch-2 button {
+    color: #93a5ff;
+    border: 0;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 10px;
+    background-color: white;
+}
+.learn-more-launch-1 button:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
     background-color: #424d83;
-    width: 520px;
-    border-radius: 5px;
-    padding: 35px;
+    color: white;
+}
+.learn-more-launch-2 button:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+    background-color: #93a5ff;
+    color: white;
 }
 .image-launch-2 {
     background-color: #93a5ff;
@@ -234,6 +272,19 @@ body {
 }
 .feedback {
     background-color: #f7f8ff;
+    position: relative;
+}
+.dotted-feedback-1 {
+    position: absolute;
+    width: 15%;
+    right: 0;
+    top: -45px;
+}
+.dotted-feedback-2 {
+    position: absolute;
+    width: 15%;
+    left: 0;
+    bottom: -50px;
 }
 .title-feedback h5{
     font-weight: 700;
@@ -245,6 +296,51 @@ body {
 .feedback-1-text {
     margin-top: 25px;
 }
+.owl-carousel {
+    width: 100%;
+    height: 50vh;
+}
+.slide {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+.slide-content {
+    position: absolute;
+    top: 100px;
+    transform: translateY(-50%);
+}
+.owl-dots {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 1%;
+}
+.owl-dots span {
+    width: 20px;
+}
+.owl-dots button {
+    border: 0;
+    outline: 0;
+}
+.owl-nav button {
+    border: 0;
+    outline: 0;
+}
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    color: #384170;
+    font-size: 60px;
+    font-weight: bolder;
+}
+.owl-prev {
+    left: 1%;
+}
+.owl-next {
+    right: 1%;
+}
 .rating {
     color: #fad56b;
 }
@@ -254,4 +350,72 @@ body {
 }
 .feedback-1-text small {
     font-weight: bold;
+}
+.title-our-clients h5{
+    font-weight: 700;
+    color: black;
+}
+.title-our-clients p{
+    color: #505050;
+}
+.logo-clients img {
+    max-width: 120px;
+}
+.logo-clients .col {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.free-trial button {
+    border: 0;
+    border-radius: 5px;
+    background-color: #93a5ff;
+    color: white;
+    padding: 5px 15px;
+    font-size: 12px;
+}
+.free-trial button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: #424d83;
+}
+.footer {
+    width: 100%;
+    background-image: url(assets/Hero_BG\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    color: white;
+}
+.sub-footer .col {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 100px;
+    /* color: white; */
+}
+.sub-footer p {
+    font-weight: bold;
+}
+.card-accept img {
+    padding: 5px;
+    width: 80px;
+}
+.sub-sub-footer-1 img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+.sub-sub-footer-1 p {
+    margin: 0;
+}
+.sosmed-footer img {
+    padding: 5px;
+    width: 30px;
+}
+.terms-footer p {
+    padding: 0 10px;
+}
+.terms-footer .privacy {
+    border-left: 1px solid black;
 }
